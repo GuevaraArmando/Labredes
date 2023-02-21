@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 20px;
+			height: 100vh;
+		}
+
+		.video {
+			grid-column: 1 / 6;
+			grid-row: 1 / 3;
+			background-color: #f0f0f0;
+			padding: 20px;
+		}
+
+		.texto {
+			grid-column: 6 / 9;
+			grid-row: 1 / 3;
+			background-color: #d0d0d0;
+			padding: 20px;
+		}
+
+		.video iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+        .photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.photo-container img {
+  max-width: 100%;
+}
+
+.description {
+  text-align: center;
+}
+.c {
+    align-items: center;
+}
+	</style>
+</head>
+<body>
+    <div class="photo-container">
+        <img src="images/cables.jpg" alt="Descripción de la foto">
+        <div class="description">
+          <h3>Practica 3: Cables de Red</h3>
+          <p>A pesar de los avances en las tecnologías inalámbricas, muchas redes de ordenadores aún dependen de cables para la transferencia de datos de sus dispositivos. 
+            Existen varios tipos de estándares de cables de red, como por ejemplo, el cable coaxial, el cable de par trenzado, el cable USB, el cable cruzado, el cable directo, el cable de fibra óptica, etc.
+            Entre estos, cable directo y cable cruzado son los tipos de cable más desconocidos.</p>
+        </div>
+      </div>
+      
+    
+	<div class="container">
+		<div class="video">
+			<iframe src="images/cd.jpg" ></iframe>
+		</div>
+		<div class="texto">
+			<h2>El cable de red directo no cambia su dirección. Ambos extremos utilizan el mismo estándar de cableado: T-568A o T-568B. Por lo tanto, ambos extremos (conector A y conector B) del cable directo tienen una disposición de cables del mismo color (como se muestra en la siguiente imagen). 
+                Así, el Pin 1 en el conector A se dirige al Pin 1 en el conector B, el Pin 2 al Pin 2, etc.
+                 Estos cables son ampliamente utilizados para conectar ordenadores a switches, concentradores o enrutadores.</h2>
+			<img id="c" src="images/cda.jpg" width="500px" height="500px">
+		</div>
+	</div>
+    <div class="container">
+		<div class="video">
+			<iframe src="images/cc.jpg"></iframe>
+		</div>
+		<div class="texto">
+			<h2>El cable cruzado, como su nombre indica, se cruza o cambia de dirección de un extremo a otro.
+                 A diferencia del cable directo, el cable cruzado utiliza diferentes estándares de cableado en cada uno de sus extremos: uno el estándar T568A y el otro el estándar T568B. 
+                 Ambos lados (conector A y conector B) del cable cruzado tendrán una disposición de cables de diferente color; los cables que salen del conector A deben coincidir con sus pins correspondientes en el conector B, tal y como se muestra en el siguiente ejemplo.
+                 Los cables cruzados se usan principalmente para conectar dos enrutadores, ordenadores o concentradores (hub).</h2>
+			<img id="c" src="images/cca.jpg" width="500px" height="500px">
+		</div>
+	</div>
+    
+		
+
+
+</body>
+</html>
+
+</body>
+</html>
